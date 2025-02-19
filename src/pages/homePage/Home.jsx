@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import Navbar from "../../components/navbar/Navbar";
 import FirstPage from "../../components/contentPage/FirstPage";
-import SecondPage from "../../components/contentPage/secondPage";
+import SecondPage from "../../components/contentPage/SecondPage";
 import MoneySprinkle from "../../components/moneySprinkle/MoneySprinkle";
 import ThirdPage from "../../components/contentPage/ThirdPage";
 
