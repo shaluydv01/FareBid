@@ -1,0 +1,23 @@
+@keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  .money {
+    position: fixed;
+    top: -50px;
+    width: 40px;
+    height: 40px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/2489/2489240.png"); /* Money icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    animation: fall 3s linear infinite;
+  }
+  

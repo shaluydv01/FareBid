@@ -1,0 +1,49 @@
+@keyframes slideIn1 {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn2 {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.list-item1 {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.list-item1.show {
+  animation: slideIn1 1s ease-out forwards;
+}
+
+.list-item2 {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.list-item2.show {
+  animation: slideIn2 1s ease-out forwards;
+}
+
+
+/* Change color for the first part of each feature */
+.highlight {
+  font-weight: bold;
+}
+

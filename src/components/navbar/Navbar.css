@@ -1,0 +1,42 @@
+@keyframes spinIn {
+  0% {
+    transform: rotate(-90deg); /* Start rotating backward */
+  }
+  50% {
+    transform: rotate(90deg); /* Rotate forward */
+  }
+  100% {
+    transform: rotate(-90deg); /* Rotate backward again */
+  }
+}
+
+#spinning-logo {
+  width: 40px; /*Adjust size as needed*/
+  animation: spinIn 10s ease-in-out infinite; /* Infinite looping */
+}
+
+/* Basic styles for links */
+.navbar-container a {
+  text-decoration: none;
+  position: relative; /* To position the underline */
+  color: #dc3545; /* Default text color (red) */
+  transition: color 0.3s ease; /* Optional: smooth transition for text color */
+}
+
+/* Underline effect on hover */
+.navbar-container a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #dc3545; /* Red underline */
+  transition: width 0.3s ease; /* Sliding effect */
+}
+
+/* When hovering on the link, expand the underline */
+.navbar-container a:hover::after {
+  width: 100%;
+}
+
